@@ -1,0 +1,22 @@
+FUNCTION binarySearch(array, target)
+
+   left = 0
+   right = array length – 1
+
+   WHILE left <= right DO
+
+      middle = (left + right) / 2
+
+      IF array[middle] == target THEN
+         RETURN middle
+      ELSE IF array[middle] < target THEN
+         left = middle + 1
+      ELSE
+         right = middle – 1
+      END IF
+
+   END WHILE
+
+   RETURN 'Not Found'
+
+END FUNCTION
